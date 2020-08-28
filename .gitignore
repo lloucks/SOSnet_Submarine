@@ -1,0 +1,13 @@
+.vscode
+python_environment/
+opencv_contrib-master/
+test*
+2019-*/
+*.zip
+*.MTS
+*.avi
+*.mp4
+*.mp3
+*.pth
+*.params
+*.*.*.*.*.*.*.*.events.out.*
