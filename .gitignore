@@ -10,4 +10,4 @@ test*
 *.mp3
 *.pth
 *.params
-*.*.*.*.*.*.*.*.events.out.*
+*.events.out.*

@@ -156,11 +156,6 @@ while cap.isOpened():
                 flags=0)
             
     flann_matches = cv2.drawMatchesKnn(img1,kp1,img2,kp2,good,0, flags=2)
-
-    # Show image
-    cv2.namedWindow('detection', cv2.WINDOW_NORMAL)
-    cv2.resizeWindow('detection', 600,600)
-    cv2.imshow('frame', flann_matches)
     ratio = 0.7
     good = []
     for p, q in matches:
@@ -168,8 +163,17 @@ while cap.isOpened():
             good.append(p)
     print "len(good)"
     print len(good)
+
+    # Show image
+    '''
+    cv2.namedWindow('detection', cv2.WINDOW_NORMAL)
+    cv2.resizeWindow('detection', 600,600)
+    cv2.imshow('frame', flann_matches)
+    '''
+    '''
     if cv2.waitKey(1) & 0xFF == ord('q'):
     	break
+    '''
 
 
 cap.release()
